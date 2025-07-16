@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaPaperPlane } from 'react-icons/fa'
 import { electricalControlContent } from '../../data/electricalControlContent'
 import { Link } from 'react-router-dom'

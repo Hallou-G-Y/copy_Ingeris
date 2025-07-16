@@ -1,4 +1,3 @@
-import React from 'react';
 import { legalNoticeContent } from '../data/legalNoticeContent';
 
 const LegalNotice = () => {

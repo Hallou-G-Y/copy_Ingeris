@@ -96,6 +96,31 @@ npm run preview      # Prévisualise le build de production
 npm run lint         # Vérification du code avec ESLint
 ```
 
+## 🌐 Déploiement GitHub Pages
+
+Le projet est configuré pour un déploiement automatique sur GitHub Pages via GitHub Actions.
+
+### Configuration automatique
+
+1. **Poussez votre code** sur la branche `main` ou `master`
+2. **Activez GitHub Pages** dans les Settings du repository
+3. **Sélectionnez "GitHub Actions"** comme source
+4. Le déploiement se lance automatiquement !
+
+### Workflow CI/CD
+
+Le pipeline automatique :
+- ✅ Installe les dépendances avec pnpm
+- ✅ Lance les tests de linting
+- ✅ Build le projet React
+- ✅ Déploie sur GitHub Pages
+
+📖 **Guide complet** : Voir [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### URL de déploiement
+
+Votre site sera accessible à : `https://[username].github.io/copy_Ingeris/`
+
 ## 🎨 Personnalisation
 
 ### Couleurs

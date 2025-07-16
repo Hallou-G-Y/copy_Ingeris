@@ -53,10 +53,16 @@ jobs:
       run: ls -la
       
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm install --force
+      
+    - name: Install TypeScript ESLint explicitly
+      run: pnpm add -D @typescript-eslint/eslint-plugin@^6.10.0 @typescript-eslint/parser@^6.10.0
       
     - name: Verify TypeScript ESLint installation
       run: pnpm list @typescript-eslint/eslint-plugin @typescript-eslint/parser
+      
+    - name: Check node_modules structure
+      run: ls -la node_modules/@typescript-eslint/ || echo "TypeScript ESLint not found in node_modules"
       
     - name: Run linter
       run: pnpm lint

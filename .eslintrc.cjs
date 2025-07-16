@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:react-hooks/recommended',
@@ -13,5 +13,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-undef': 'off', // Désactivé car TypeScript gère les types
   },
 } 

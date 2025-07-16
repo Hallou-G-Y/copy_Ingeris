@@ -110,7 +110,7 @@ Le projet est configuré pour un déploiement automatique sur GitHub Pages via G
 ### Workflow CI/CD
 
 Le pipeline automatique :
-- ✅ Installe les dépendances avec npm
+- ✅ Installe les dépendances avec pnpm
 - ✅ Lance les tests de linting
 - ✅ Build le projet React
 - ✅ Déploie sur GitHub Pages

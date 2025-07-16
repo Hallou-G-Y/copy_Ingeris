@@ -7,7 +7,7 @@ const ElectricalControl = () => {
     <div>
       <div
         className="relative min-h-screen w-full bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/electricalWorking.jpg')" }}
+        style={{ backgroundImage: "url('/copy_Ingeris/electricalWorking.jpg')" }}
       >
         {/* Overlay pour lisibilité */}
         <div className="absolute inset-0 bg-black/50" />

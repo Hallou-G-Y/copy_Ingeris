@@ -38,7 +38,7 @@ export const domains: Domain[] = [
   {
     id: 'essms',
     title: 'ESSMS',
-    imageUrl: '/domains/essms.jpeg',
+    imageUrl: '/copy_Ingeris/domains/essms.jpeg',
     linkUrl: '/domains/essms',
     description: 'Contrôle et certification pour les établissements sociaux et médico-sociaux'
   },

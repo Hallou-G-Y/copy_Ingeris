@@ -8,7 +8,7 @@ const Home = () => {
       <section className="relative overflow-hidden text-white py-20">
         {/* Background image floue */}
         <img
-          src="/paysage_sunset.png"
+          src="/copy_Ingeris/paysage_sunset.png"
           alt="Coucher de soleil"
           className="absolute inset-0 w-full h-full object-cover object-[50%_60%] scale-105"
           style={{ zIndex: 0 }}

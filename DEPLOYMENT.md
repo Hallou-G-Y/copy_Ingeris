@@ -27,12 +27,11 @@ Le pipeline automatique effectue les étapes suivantes :
 
 ### Sur chaque Push/Pull Request :
 1. **Checkout** du code source
-2. **Setup** de Node.js 18 et pnpm
-3. **Cache** des dépendances pnpm
-4. **Installation** des dépendances
-5. **Linting** du code TypeScript/React
-6. **Build** du projet React
-7. **Upload** des artefacts de build
+2. **Setup** de Node.js 18 avec cache npm
+3. **Installation** des dépendances avec npm ci
+4. **Linting** du code TypeScript/React
+5. **Build** du projet React
+6. **Upload** des artefacts de build
 
 ### Sur Push vers main/master :
 8. **Déploiement** automatique sur GitHub Pages
@@ -48,7 +47,7 @@ Le pipeline automatique effectue les étapes suivantes :
 Le build est optimisé avec :
 - **Code splitting** automatique
 - **Chunks manuels** pour React, React Router et React Icons
-- **Cache** des dépendances pnpm
+- **Cache** des dépendances npm
 - **Sourcemaps** désactivées en production
 
 ## Dépannage

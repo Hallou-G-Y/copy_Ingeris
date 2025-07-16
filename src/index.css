@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-ingeris-orange hover:bg-ingeris-orange-dark text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-ingeris-orange border border-ingeris-orange font-medium py-2 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .container-custom {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-12;
+  }
+} 

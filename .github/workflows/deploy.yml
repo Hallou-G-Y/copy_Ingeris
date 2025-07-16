@@ -49,8 +49,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pnpm-store-
           
+    - name: List files for debugging
+      run: ls -la
+      
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: pnpm install
       
     - name: Verify TypeScript ESLint installation
       run: pnpm list @typescript-eslint/eslint-plugin @typescript-eslint/parser

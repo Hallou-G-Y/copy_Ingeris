@@ -29,7 +29,7 @@ Le pipeline automatique effectue les étapes suivantes :
 1. **Checkout** du code source
 2. **Setup** de Node.js 18 et pnpm
 3. **Cache** des dépendances pnpm
-4. **Installation** des dépendances avec pnpm install --frozen-lockfile
+4. **Installation** des dépendances avec pnpm install
 5. **Vérification** des packages TypeScript ESLint
 6. **Linting** du code TypeScript/React
 7. **Build** du projet React
@@ -50,7 +50,7 @@ Le build est optimisé avec :
 - **Code splitting** automatique
 - **Chunks manuels** pour React, React Router et React Icons
 - **Cache** des dépendances pnpm
-- **Installation** sécurisée avec --frozen-lockfile
+- **Installation** des dépendances avec pnpm
 - **Sourcemaps** désactivées en production
 
 ## Dépannage

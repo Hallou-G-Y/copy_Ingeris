@@ -2,13 +2,24 @@ import DomainGrid from '../components/DomainGrid'
 import { HiOutlineClock, HiOutlineLocationMarker, HiOutlineShieldCheck } from 'react-icons/hi';
 
 const Home = () => {
+  // Détection de l'environnement pour définir le chemin correct de l'image
+  const getImagePath = (filename: string) => {
+    // Si le site est servi depuis un sous-répertoire (ex: GitHub Pages)
+    if (window.location.pathname.startsWith('/copy_Ingeris')) {
+      return `/copy_Ingeris/${filename}`;
+    }
+    // En local ou racine du domaine
+    return `/${filename}`;
+  };
+
+  const paysageSunsetPath = getImagePath('paysage_sunset.png');
   return (
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden text-white py-20">
         {/* Background image floue */}
         <img
-          src="/copy_Ingeris/paysage_sunset.png"
+          src={paysageSunsetPath}
           alt="Coucher de soleil"
           className="absolute inset-0 w-full h-full object-cover object-[50%_60%] scale-105"
           style={{ zIndex: 0 }}

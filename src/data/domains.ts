@@ -1,3 +1,4 @@
+import { getImagePath } from '../utils/utils';
 export interface Domain {
   id: string;
   title: string;
@@ -38,7 +39,7 @@ export const domains: Domain[] = [
   {
     id: 'essms',
     title: 'ESSMS',
-    imageUrl: '/copy_Ingeris/domains/essms.jpeg',
+    imageUrl: getImagePath('domains/essms.jpeg'),
     linkUrl: '/domains/essms',
     description: 'Contrôle et certification pour les établissements sociaux et médico-sociaux'
   },

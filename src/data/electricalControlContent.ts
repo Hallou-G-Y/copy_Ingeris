@@ -1,9 +1,10 @@
+import { getImagePath } from '../utils/utils';
 export const electricalControlContent = {
   hero: {
     title: "Contrôle électrique",
     description: "Nous effectuons le contrôle et la conformité des installations électriques en vue de prévenir tout risque.",
     cta: "Demander un devis",
-    image: "/electricalWorking.jpg"
+    image: getImagePath('electricalWorking.jpg')
   },
   sections: [
     /* 0 */
